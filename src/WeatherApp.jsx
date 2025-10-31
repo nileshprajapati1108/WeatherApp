@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchBox from "./SearchBox";
 import InfoBox from "./InfoBox";
-import "./WeatherApp.css"; // 👈 add this for styling
+import "./WeatherApp.css"; 
 
 export default function WeatherApp() {
   const [weatherInfo, setWeatherInfo] = useState({
@@ -20,7 +20,7 @@ export default function WeatherApp() {
 
   return (
     <div className="weather-app-container">
-      {/* ✅ Header Section with Logo + Name */}
+      { /*  Header Section with Logo + Name */}
       <header className="app-header">
         <img
           src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
@@ -30,7 +30,7 @@ export default function WeatherApp() {
         <h1 className="app-title">SkySense Weather</h1>
       </header>
 
-      {/* ✅ Main Content */}
+      {/*  Main Content */}
       <div className="app-content">
         <SearchBox updateInfo={updateInfo} />
         <InfoBox info={weatherInfo} />
