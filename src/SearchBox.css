@@ -1,0 +1,48 @@
+.SearchBox {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.SearchBox:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.SearchBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SearchBox .MuiTextField-root {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.SearchBox .MuiButton-root {
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    text-transform: none;
+    font-weight: 600;
+    padding: 8px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.SearchBox .MuiButton-root:hover {
+    background: linear-gradient(to right, #0096c7, #00b4d8);
+    transform: scale(1.05);
+}
+
+.SearchBox p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #ff4d4d;
+}
